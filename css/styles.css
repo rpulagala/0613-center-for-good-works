@@ -17,8 +17,8 @@
   --gold-bright:  #d4aa4a;
   --clay:         #c4845a;
   --sand:         #d4c4a8;
-  --ivory:        #f0ebe0;
-  --ivory-dim:    #c8bfae;
+  --ivory:        #f5f1e8;
+  --ivory-dim:    #e0d8ca;
   --parchment:    #f5f0e8;
   --deep-green:   #243a30;
 
@@ -45,8 +45,8 @@ html {
 
 body {
   font-family: var(--sans);
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.08rem;
   line-height: 1.8;
   background-color: var(--dark);
   color: var(--ivory);
@@ -95,18 +95,18 @@ h3 {
 }
 
 p {
-  font-size: 1.02rem;
-  font-weight: 300;
-  line-height: 1.82;
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.85;
 }
 
 /* --- Eyebrow Label --- */
 .eyebrow {
   display: block;
   font-family: var(--sans);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--earth);
   margin-bottom: 1rem;
@@ -599,7 +599,7 @@ p {
 }
 
 .intro__text p {
-  color: #4a3825;
+  color: #3a2d1e;
   margin-bottom: 1.4rem;
 }
 
@@ -703,7 +703,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.journey__stop--light .journey__text p { color: #4a3825; }
+.journey__stop--light .journey__text p { color: #3a2d1e; }
 
 
 /* ==============================================
@@ -781,8 +781,8 @@ p {
 }
 
 .space-card__text p {
-  font-size: 0.84rem;
-  color: rgba(240, 235, 224, 0.65);
+  font-size: 0.92rem;
+  color: rgba(245, 241, 232, 0.85);
   line-height: 1.65;
   max-height: 0;
   overflow: hidden;
@@ -815,7 +815,7 @@ p {
 
 .retreats__header .eyebrow { color: var(--earth); }
 .retreats__header h2 { color: var(--ink); margin: 0.75rem 0 1.5rem; }
-.retreats__header p  { color: #4a3825; font-size: 1.08rem; }
+.retreats__header p  { color: #3a2d1e; font-size: 1.08rem; }
 
 .retreats__grid {
   display: grid;
@@ -845,9 +845,9 @@ p {
 }
 
 .retreat-type p {
-  font-size: 0.92rem;
-  color: #5a4030;
-  line-height: 1.72;
+  font-size: 0.98rem;
+  color: #3a2d1e;
+  line-height: 1.75;
 }
 
 
@@ -942,8 +942,8 @@ p {
 }
 
 .host__list li {
-  color: var(--ivory-dim);
-  font-size: 0.94rem;
+  color: var(--ivory);
+  font-size: 1rem;
   padding: 0.55rem 0;
   border-bottom: 1px solid rgba(240, 235, 224, 0.08);
   display: flex;
@@ -1015,9 +1015,9 @@ p {
 }
 
 .form-group label {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 400;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -1025,13 +1025,13 @@ p {
 .form-group input,
 .form-group select,
 .form-group textarea {
-  background: rgba(240, 235, 224, 0.04);
-  border: 1px solid rgba(240, 235, 224, 0.14);
+  background: rgba(240, 235, 224, 0.06);
+  border: 1px solid rgba(240, 235, 224, 0.22);
   color: var(--ivory);
   padding: 0.88rem 1.15rem;
   font-family: var(--sans);
-  font-size: 0.94rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
   width: 100%;
   border-radius: 0;
   -webkit-appearance: none;
@@ -1041,7 +1041,7 @@ p {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(240, 235, 224, 0.28);
+  color: rgba(240, 235, 224, 0.42);
 }
 
 .form-group input:focus,
@@ -1271,6 +1271,22 @@ p {
   /* Retreats */
   .retreats__grid { grid-template-columns: 1fr; }
 
+  /* Mobile typography boost */
+  body { font-size: 1.1rem; }
+  p    { font-size: 1.1rem; }
+
+  .hero__subtitle         { font-size: 1.15rem; }
+  .journey__text p        { font-size: 1.1rem; }
+  .retreat-type p         { font-size: 1.05rem; }
+  .host__content > p      { font-size: 1.1rem; }
+  .contact__header p      { font-size: 1.1rem; }
+  .pullquote__sub         { font-size: 1.05rem; }
+  .space-card__text h3    { font-size: 1.25rem; }
+  .space-card__text p     { font-size: 1rem; }
+  .host__list li          { font-size: 1.05rem; }
+  .eyebrow                { font-size: 0.78rem; }
+  .nav__links a           { font-size: 1rem; }
+
   /* Form */
   .form-row { grid-template-columns: 1fr; }
 
@@ -1284,9 +1300,12 @@ p {
 }
 
 @media (max-width: 480px) {
-  .hero__title { font-size: 2.9rem; }
-  .journey__title { font-size: 2.3rem; }
-  .pullquote__content blockquote p { font-size: 2rem; }
+  body  { font-size: 1.12rem; }
+  p     { font-size: 1.12rem; }
+  .hero__title                      { font-size: 2.9rem; }
+  .journey__title                   { font-size: 2.3rem; }
+  .pullquote__content blockquote p  { font-size: 1.9rem; }
+  .journey__text                    { padding: 2.5rem 1.2rem; }
 }
 
 
