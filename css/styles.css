@@ -488,10 +488,10 @@ p {
   z-index: 1;
   background: linear-gradient(
     to bottom,
-    rgba(8, 6, 4, 0.55) 0%,
-    rgba(8, 6, 4, 0.15) 35%,
-    rgba(8, 6, 4, 0.25) 65%,
-    rgba(8, 6, 4, 0.75) 100%
+    rgba(8, 6, 4, 0.60) 0%,
+    rgba(8, 6, 4, 0.45) 35%,
+    rgba(8, 6, 4, 0.45) 65%,
+    rgba(8, 6, 4, 0.80) 100%
   );
 }
 
@@ -504,35 +504,40 @@ p {
 
 .hero__eyebrow {
   font-family: var(--sans);
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   font-weight: 400;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-bright);
   margin-bottom: 1.8rem;
   display: block;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero__title {
   font-family: var(--serif);
-  font-weight: 300;
-  font-size: clamp(3.5rem, 8.5vw, 7.5rem);
+  font-weight: 400;
+  font-size: clamp(3.6rem, 8.5vw, 7.5rem);
   line-height: 1.03;
   letter-spacing: 0.015em;
-  color: var(--ivory);
+  color: #ffffff;
   margin-bottom: 1.4rem;
-  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.7),
+    0 4px 30px rgba(0, 0, 0, 0.5),
+    0 8px 60px rgba(0, 0, 0, 0.3);
 }
 
 .hero__subtitle {
   font-family: var(--serif);
   font-style: italic;
-  font-weight: 300;
-  font-size: clamp(1.1rem, 2.2vw, 1.55rem);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
   line-height: 1.65;
-  color: var(--ivory-dim);
+  color: #f0ebe0;
   margin-bottom: 3rem;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.65);
 }
 
 .hero__ctas {
@@ -1275,7 +1280,7 @@ p {
   body { font-size: 1.1rem; }
   p    { font-size: 1.1rem; }
 
-  .hero__subtitle         { font-size: 1.15rem; }
+  .hero__subtitle         { font-size: 1.3rem; }
   .journey__text p        { font-size: 1.1rem; }
   .retreat-type p         { font-size: 1.05rem; }
   .host__content > p      { font-size: 1.1rem; }
@@ -1302,7 +1307,8 @@ p {
 @media (max-width: 480px) {
   body  { font-size: 1.12rem; }
   p     { font-size: 1.12rem; }
-  .hero__title                      { font-size: 2.9rem; }
+  .hero__title                      { font-size: 3.2rem; }
+  .hero__subtitle                   { font-size: 1.25rem; }
   .journey__title                   { font-size: 2.3rem; }
   .pullquote__content blockquote p  { font-size: 1.9rem; }
   .journey__text                    { padding: 2.5rem 1.2rem; }
